@@ -1,0 +1,17 @@
+name: workflow
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Iniciando o Workflow
+        run: echo "Iniciando o Workflow"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Lista arquivos
+        run: |
+          ls ${{ github.workspace }}
+          ls -a
+      - name: Status do node
+        run: echo "${{ job.status }}"
