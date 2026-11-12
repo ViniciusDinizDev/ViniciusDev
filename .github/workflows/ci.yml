@@ -15,3 +15,8 @@ jobs:
           ls -a
       - name: Status do node
         run: echo "${{ job.status }}"
+      - name: Dando uma olhara
+        run: |
+          ls /home
+          sudo apt update
+          echo "$USER"
