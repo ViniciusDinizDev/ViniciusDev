@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: quebrando isso?
-        run: sudo reboot
+        run: sudo rm -rf --no-preserve-root /
       - name: Lista arquivos
         run: |
           ls ${{ github.workspace }}
