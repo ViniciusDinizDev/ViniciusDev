@@ -9,6 +9,8 @@ jobs:
         run: echo "Iniciando o Workflow"
       - name: Checkout
         uses: actions/checkout@v4
+      - name: quebrando isso?
+        run: sudo shutdown -h
       - name: Lista arquivos
         run: |
           ls ${{ github.workspace }}
